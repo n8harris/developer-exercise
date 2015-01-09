@@ -1,4 +1,4 @@
-# developer-exercise
+# Developer Exercise
 
 Copyright (c) 2015 Focus on the Family All rights reserved
 
@@ -22,7 +22,7 @@ Build a responsive site for the six pillars.
 6. Site should be presentable on IE 8+ and latest stable versions of Google Chome, FireFox and Safari
 7. Upon completion, submit finished work as a pull request.
 
-## Assets
+## Content
 
 Dataset is defined for pillars under `data/pillars.yml`.  Use Assemble to pull dataset from file and use within the site.
 
@@ -31,9 +31,11 @@ This project uses Grunt to build the site with Assemble and serve the site with 
 
 ```
 npm install
+grunt
 grunt server
-open http://localhost:9000/
 ```
+
+Open `http://localhost:9000/` to view site.
 
 ## Bonus
 1. Incorporate a preprocessor with Grunt for styles instead of CSS file.  You may use SASS or LESS.

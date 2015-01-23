@@ -31,9 +31,12 @@ This project uses Grunt to build the site with Assemble and serve the site with 
 
 ```
 npm install
+cd node_modules/assemble (Windows only)
+npm install resolve-dep@0.5.3 (Windows only)
 grunt
 grunt server
 ```
+See issue #1 for background on resolve-dep dependency for assemble
 
 Open `http://localhost:9000/` to view site.
 

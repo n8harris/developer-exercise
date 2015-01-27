@@ -1,4 +1,13 @@
 module.exports = (grunt) ->
+  
+  grunt.config "sass",
+  
+  dist:   
+    files:  [      
+      'dist/css/pillars.css': '**/pillars.css.scss' 
+      
+    ]
+    
   grunt.config "watch",
 
   livereload:
@@ -15,5 +24,11 @@ module.exports = (grunt) ->
   publicDirectory:
     files: [ "public/**/*" ]
     tasks: "default"
-
+    
+  css:
+    files: '**/*.scss'
+    tasks: ['sass:dist']
+    
+    
+  grunt.loadNpmTasks 'grunt-contrib-sass'
   grunt.loadNpmTasks 'grunt-contrib-watch'

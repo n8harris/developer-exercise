@@ -3,7 +3,9 @@ module.exports = (grunt) ->
     options:
       partials: "templates/partials/*"
       data: "data/*.yml"
-      layoutdir: ['default.hbs']
+      layout: "default.hbs"
+      layoutdir: "templates/layouts/"
+      helpers: "handlebars-helpers"
       
 
     files:
